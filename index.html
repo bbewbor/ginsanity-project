@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- overall page container -->
+    <div class="page-container">
+      
+      <!-- header -->
+    <header class="header" id="header">
+      <img
+        src="https://i.imgur.com/AQiCsYo.png"
+        alt="Gin globe glass logo"
+        class="logo"
+        id="header-img"
+      />
+
+      <h1 class="title"><a href="#welcome-section">Ginsanity</a></h1>
+      <nav class="nav-bar" id="nav-bar">
+        <input id="nav-toggle" type="checkbox">
+        <ul class="nav-items">
+          <li class="nav-link"><a href="#video-section">Video</a></li>
+          <li class="nav-link"><a href="#product-section">Product</a></li>
+          <li class="nav-link"><a href="#about-section">About</a></li>
+          <li class="nav-link"><a href="#contact-section">Contact</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </label>
+      </nav>
+    </header>
+
+    <!-- main content container -->
+    <div class="container">
+      <section class="welcome-section" id="welcome-section">
+        <h2 class="section-title">Welcome to Ginsanity</h2>
+      </section>
+      
+      <!-- video section -->
+      <section class="video-section" id="video-section">
+        <div class="video-wrap">
+          <div class="video-container">
+            <iframe
+              class="video"
+              src="https://www.youtube-nocookie.com/embed/8x9QeORQKx8"
+              frameborder="0"
+              allowfullscreen
+              id="video"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <!-- product section -->
+      <section class="product-section" id="product-section">
+        <h2 class="section-title">Gin Box</h2>
+        <div class="pricing">
+          <div class="product" id="small">
+            <h3 class="product-title">Small</h3>
+            <p class="product-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, modi?</p>
+            <button class="buy" id="buy-small">£10</button>
+          </div>
+          <div class="product" id="medium">
+            <h3 class="product-title">Medium</h3>
+            <p class="product-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, modi?</p>
+            <button class="buy" id="buy-medium">£15</button>
+          </div>
+          <div class="product" id="large">
+            <h3 class="product-title">Large</h3>
+            <p class="product-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, modi?</p>
+            <button class="buy" id="buy-large">£20</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- about section -->
+      <section class="about-section" id="about-section">
+        <h2 class="section-title">About Us</h2>
+        <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed odio dolorem commodi dolore qui dolores, tempora temporibus saepe obcaecati soluta laudantium voluptate dolorum culpa. Corporis labore facere nostrum sint eligendi?</p>
+        <p class="bio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae accusantium odio nobis qui quis deleniti aliquid tempora? Corporis perferendis enim eos iste inventore eum ratione quos numquam culpa aperiam? Temporibus!</p>
+      </section>
+
+      <!-- contact section -->
+      <section class="contact-section" id="contact-section">
+        <h2 class="section-title">Want to find out more?</h2>
+        
+        <!-- email form -->
+        <form action=""https://www.freecodecamp.com/email-submit"" class="contact-form" id="form">
+          <input
+          class="form-input"
+          id="email"
+          aria-labelledby="email submission form"
+          type="email"
+          placeholder="Enter your email"
+          autocomplete="yes"
+          required
+          />
+          <!-- submit button -->
+          <button class="form-submit" type="submit" id="submit">Yes Please!</button>
+        </form>
+        <!-- footer section -->
+        <footer class="footer" id="footer">&#169 Rob Webb</footer>
+      </section>
+    </div>
+    
+    </div>
+  </body>
+</html>
